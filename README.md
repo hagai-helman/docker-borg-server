@@ -3,8 +3,15 @@
 It's useful when you want to store Borg repositories on a computer, and you want to use Borg's efficient backup-over-SSH feature, but you don't want to expose that computer to "real" SSH connections.  
   
 
-## Usage  
-  
+## Installation
+
+
+```
+docker pull helmantov/borg-server
+```
+
+
+## Usage   
   
 
 ### Using Docker CLI  
