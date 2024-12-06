@@ -1,6 +1,8 @@
 #!/bin/bash
 
 if test -f "/.first-run"; then
+	groupdel ubuntu
+	userdel ubuntu
 	groupadd -g ${PGID:=1000} ${USERNAME:=user}
 	useradd -u ${PUID:=1000} -g ${PGID:=1000} ${USERNAME:=user}
 	echo ${USERNAME:=user}:${PASSWORD:=password} | chpasswd
